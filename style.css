@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: "Krub", serif;
+    background-color:  hsl(0, 0%, 94%);
+  }
+  :root{
+    --Purple: hsl(259, 100%, 65%);
+    --Lightred: hsl(0, 100%, 67%);
+    --Smokeygrey: hsl(0, 1%, 44%);
+
+
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  } 
+   /* Small */
+   @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } 
+  .app{
+    margin: 100px auto;
+    width: 500px;
+    padding: 25px;
+    border: solid black 1px;
+    border-radius: 15px;
+    border-bottom-right-radius: 100px;
+    background-color: white;
+    border: none;
+  }
+
+  .app .inb-box{
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .app .inb-box  div h3{
+    text-transform: uppercase;
+    color: var(--Smokeygrey);
+    font-size: 12px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .app .inb-box div input{
+    width: 120px;
+    height: 52px;
+    margin-right: 15px;
+    padding: 5px 13px;
+    font-size: 27px;
+    font-weight: bold;
+    border: solid 1px var(--Smokeygrey);
+    border-radius: 5px;
+}
+
+.required{
+  color: var(--Lightred);
+  font-size: 10px;
+  margin-top: 10px;
+  font-family: "Krub", serif;
+}
+.app .inb-box button{
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: var(--Purple);
+    color: white;
+    transition: 0.3S;
+}
+.app .inb-box button img{
+    height: 30px;
+}
+.app .inb-box button:hover{
+  background-color: black;
+}
+.result{
+    margin-top: 25px;
+}
+
+.result h1{
+    font-size: 60px;
+}
+
+.result h1 span{
+    color: var(--Purple);
+}
+
+@media (max-width:768px) {
+  .app{
+    margin: 100px auto;
+    width: 375px;
+  }
+  .app .inb-box button {
+    right: 50%;
+    transform: translatex(50%);
+    bottom: -97px;
+}
+.result {
+  margin-top: 40px;
+}
+.app .inb-box {
+  margin-bottom: 65px;
+}
+.app .inb-box div input{
+  font-size: 21px;
+  width:98px ;
+  
+}
+
+}
