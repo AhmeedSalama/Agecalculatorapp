@@ -73,6 +73,11 @@
     font-weight: bold;
     border: solid 1px var(--Smokeygrey);
     border-radius: 5px;
+    caret-color: var(--Purple);
+}
+.app .inb-box div input:focus {
+  border: solid 2px var(--Purple); 
+  outline: none; 
 }
 
 .required{
